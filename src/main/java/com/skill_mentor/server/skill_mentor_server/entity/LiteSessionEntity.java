@@ -15,23 +15,20 @@ import java.time.Instant;
 @Table(name = "session")
 @NoArgsConstructor
 @AllArgsConstructor
-public class SessionEntity {
+public class LiteSessionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "session_id")
     private Integer sessionId;
-    @NotNull(message = "Student must not be null")
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "student_id", referencedColumnName = "student_id", nullable = false)
-    private StudentEntity studentEntity;
-    @NotNull(message = "Classroom must not be null")
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "class_room_id", referencedColumnName = "class_room_id", nullable = false)
-    private ClassRoomEntity classRoomEntity;
-    @NotNull(message = "Mentor must not be null")
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "mentor_id", referencedColumnName = "mentor_id", nullable = false)
-    private MentorEntity mentorEntity;
+    @NotNull(message = "Student ID must not be null")
+    @Column(name = "student_id", nullable = false)
+    private Integer studentId;
+    @NotNull(message = "Classroom ID must not be null")
+    @Column(name = "class_room_id", nullable = false)
+    private Integer classRoomId;
+    @NotNull(message = "Mentor ID must not be null")
+    @Column(name = "mentor_id", nullable = false)
+    private Integer mentorId;
     @NotBlank(message = "Topic must not be blank")
     @Column(name = "topic", nullable = false)
     private String topic;
