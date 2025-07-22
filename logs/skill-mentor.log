@@ -1,0 +1,5 @@
+2025-07-23T00:28:45.574+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-23T00:28:45.583+05:30  INFO 29432 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-23T00:28:45.592+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T00:28:45.599+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23T00:28:45.603+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
