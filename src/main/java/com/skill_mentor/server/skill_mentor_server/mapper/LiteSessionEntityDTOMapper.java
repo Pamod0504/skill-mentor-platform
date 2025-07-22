@@ -3,8 +3,6 @@ package com.skill_mentor.server.skill_mentor_server.mapper;
 import com.skill_mentor.server.skill_mentor_server.dto.SessionLiteDTO;
 import com.skill_mentor.server.skill_mentor_server.entity.LiteSessionEntity;
 
-public class LiteSessionEntityDtoMapper {
-}
 public class LiteSessionEntityDTOMapper {
 
     public static LiteSessionEntity map(SessionLiteDTO sessionLiteDTO) {
