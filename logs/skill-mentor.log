@@ -1,5 +1,437 @@
-2025-07-23T00:28:45.574+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-23T00:28:45.583+05:30  INFO 29432 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-23T00:28:45.592+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-23T00:28:45.599+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-23T00:28:45.603+05:30  INFO 29432 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T09:30:44.265+05:30  INFO 21520 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 21520 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T09:30:44.268+05:30  INFO 21520 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T09:30:44.991+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:30:44.993+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T09:30:45.114+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 5 JPA repository interfaces.
+2025-07-27T09:30:45.126+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:30:45.127+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T09:30:45.140+05:30  INFO 21520 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:30:45.140+05:30  INFO 21520 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:30:45.140+05:30  INFO 21520 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:30:45.140+05:30  INFO 21520 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:30:45.141+05:30  INFO 21520 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:30:45.141+05:30  INFO 21520 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T09:30:45.594+05:30  INFO 21520 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T09:30:45.607+05:30  INFO 21520 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T09:30:45.608+05:30  INFO 21520 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T09:30:45.656+05:30  INFO 21520 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T09:30:45.656+05:30  INFO 21520 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1359 ms
+2025-07-27T09:30:45.829+05:30  INFO 21520 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T09:30:45.884+05:30  INFO 21520 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T09:30:45.914+05:30  INFO 21520 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T09:30:46.123+05:30  INFO 21520 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T09:30:46.147+05:30  INFO 21520 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T09:30:46.463+05:30  INFO 21520 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dd08ff1
+2025-07-27T09:30:46.465+05:30  INFO 21520 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T09:30:46.534+05:30  WARN 21520 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T09:30:46.546+05:30  INFO 21520 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T09:30:47.313+05:30  INFO 21520 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T09:30:47.410+05:30  INFO 21520 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T09:30:47.602+05:30  INFO 21520 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T09:30:47.847+05:30  WARN 21520 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T09:30:48.023+05:30  WARN 21520 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 803214e0-8dab-40cb-bf00-6bb65863e5e0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T09:30:48.028+05:30  INFO 21520 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T09:30:49.261+05:30  INFO 21520 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T09:30:49.267+05:30  INFO 21520 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 5.427 seconds (process running for 6.1)
+2025-07-27T09:31:09.202+05:30  INFO 21520 --- [skill-mentor-root] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T09:31:09.203+05:30  INFO 21520 --- [skill-mentor-root] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T09:31:09.204+05:30  INFO 21520 --- [skill-mentor-root] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-27T09:50:31.861+05:30  INFO 21520 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T09:50:31.865+05:30  INFO 21520 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T09:50:31.877+05:30  INFO 21520 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T09:50:31.879+05:30  INFO 21520 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T09:50:31.884+05:30  INFO 21520 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T09:50:34.376+05:30  INFO 28080 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 28080 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T09:50:34.378+05:30  INFO 28080 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T09:50:35.124+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:50:35.125+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T09:50:35.236+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
+2025-07-27T09:50:35.250+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:50:35.251+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T09:50:35.265+05:30  INFO 28080 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:50:35.266+05:30  INFO 28080 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:50:35.266+05:30  INFO 28080 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:50:35.266+05:30  INFO 28080 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:50:35.266+05:30  INFO 28080 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:50:35.267+05:30  INFO 28080 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-07-27T09:50:35.758+05:30  INFO 28080 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T09:50:35.770+05:30  INFO 28080 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T09:50:35.770+05:30  INFO 28080 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T09:50:35.824+05:30  INFO 28080 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T09:50:35.824+05:30  INFO 28080 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+2025-07-27T09:50:35.975+05:30  INFO 28080 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T09:50:36.038+05:30  INFO 28080 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T09:50:36.070+05:30  INFO 28080 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T09:50:36.310+05:30  INFO 28080 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T09:50:36.335+05:30  INFO 28080 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T09:50:36.633+05:30  INFO 28080 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1293f8d7
+2025-07-27T09:50:36.634+05:30  INFO 28080 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T09:50:36.674+05:30  WARN 28080 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T09:50:36.691+05:30  INFO 28080 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T09:50:37.476+05:30  INFO 28080 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T09:50:37.532+05:30  INFO 28080 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T09:50:37.690+05:30  INFO 28080 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T09:50:37.887+05:30  WARN 28080 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T09:50:38.046+05:30  WARN 28080 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b2e8519b-730f-4eb1-9f26-e5e44659f47d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T09:50:38.051+05:30  INFO 28080 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T09:50:39.398+05:30  INFO 28080 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T09:50:39.405+05:30  INFO 28080 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 5.457 seconds (process running for 6.105)
+2025-07-27T09:50:57.983+05:30  INFO 28080 --- [skill-mentor-root] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T09:50:57.983+05:30  INFO 28080 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T09:50:57.984+05:30  INFO 28080 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-27T09:51:54.740+05:30  INFO 28080 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T09:51:54.743+05:30  INFO 28080 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T09:51:54.754+05:30  INFO 28080 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T09:51:54.755+05:30  INFO 28080 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T09:51:54.758+05:30  INFO 28080 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T09:51:56.696+05:30  INFO 26372 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 26372 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T09:51:56.698+05:30  INFO 26372 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T09:51:57.267+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:51:57.268+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T09:51:57.363+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+2025-07-27T09:51:57.373+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T09:51:57.374+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T09:51:57.385+05:30  INFO 26372 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:51:57.385+05:30  INFO 26372 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:51:57.385+05:30  INFO 26372 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:51:57.386+05:30  INFO 26372 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:51:57.386+05:30  INFO 26372 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T09:51:57.386+05:30  INFO 26372 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T09:51:57.745+05:30  INFO 26372 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T09:51:57.770+05:30  INFO 26372 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T09:51:57.775+05:30  INFO 26372 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T09:51:57.813+05:30  INFO 26372 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T09:51:57.814+05:30  INFO 26372 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1088 ms
+2025-07-27T09:51:57.920+05:30  INFO 26372 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T09:51:57.952+05:30  INFO 26372 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T09:51:57.975+05:30  INFO 26372 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T09:51:58.147+05:30  INFO 26372 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T09:51:58.165+05:30  INFO 26372 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T09:51:58.357+05:30  INFO 26372 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78e97d4d
+2025-07-27T09:51:58.358+05:30  INFO 26372 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T09:51:58.390+05:30  WARN 26372 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T09:51:58.402+05:30  INFO 26372 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T09:51:59.022+05:30  INFO 26372 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T09:51:59.073+05:30  INFO 26372 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T09:51:59.228+05:30  INFO 26372 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T09:51:59.425+05:30  WARN 26372 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T09:51:59.582+05:30  WARN 26372 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 142a4ee6-0a81-4664-bb9f-11558403437d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T09:51:59.587+05:30  INFO 26372 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T09:52:00.431+05:30  INFO 26372 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T09:52:00.438+05:30  INFO 26372 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 4.091 seconds (process running for 4.605)
+2025-07-27T09:52:08.404+05:30  INFO 26372 --- [skill-mentor-root] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T09:52:08.404+05:30  INFO 26372 --- [skill-mentor-root] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T09:52:08.405+05:30  INFO 26372 --- [skill-mentor-root] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-27T10:38:41.589+05:30  INFO 26372 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T10:38:41.594+05:30  INFO 26372 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T10:38:41.614+05:30  INFO 26372 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T10:38:41.618+05:30  INFO 26372 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T10:38:41.621+05:30  INFO 26372 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T10:44:00.994+05:30  INFO 29608 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 29608 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T10:44:00.995+05:30  INFO 29608 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T10:44:01.654+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T10:44:01.655+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T10:44:01.753+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 5 JPA repository interfaces.
+2025-07-27T10:44:01.764+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T10:44:01.765+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T10:44:01.779+05:30  INFO 29608 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T10:44:01.779+05:30  INFO 29608 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T10:44:01.779+05:30  INFO 29608 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T10:44:01.779+05:30  INFO 29608 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T10:44:01.779+05:30  INFO 29608 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T10:44:01.780+05:30  INFO 29608 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T10:44:02.204+05:30  INFO 29608 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T10:44:02.215+05:30  INFO 29608 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T10:44:02.216+05:30  INFO 29608 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T10:44:02.280+05:30  INFO 29608 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T10:44:02.280+05:30  INFO 29608 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1254 ms
+2025-07-27T10:44:02.424+05:30  INFO 29608 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T10:44:02.474+05:30  INFO 29608 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T10:44:02.501+05:30  INFO 29608 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T10:44:02.695+05:30  INFO 29608 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T10:44:02.720+05:30  INFO 29608 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T10:44:03.004+05:30  INFO 29608 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@335896bd
+2025-07-27T10:44:03.005+05:30  INFO 29608 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T10:44:03.046+05:30  WARN 29608 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T10:44:03.065+05:30  INFO 29608 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T10:44:03.832+05:30  INFO 29608 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T10:44:04.293+05:30  INFO 29608 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T10:44:04.462+05:30  INFO 29608 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T10:44:04.691+05:30  WARN 29608 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T10:44:04.908+05:30  WARN 29608 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ebb1dc40-c4a8-4953-a6e3-15789b374016
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T10:44:04.915+05:30  INFO 29608 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T10:44:06.079+05:30  INFO 29608 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T10:44:06.086+05:30  INFO 29608 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 5.534 seconds (process running for 6.091)
+2025-07-27T10:48:31.055+05:30  INFO 29608 --- [skill-mentor-root] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T10:48:31.062+05:30  INFO 29608 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T10:48:31.063+05:30  INFO 29608 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-27T11:16:07.896+05:30  INFO 29608 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T11:16:07.899+05:30  INFO 29608 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T11:16:07.913+05:30  INFO 29608 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T11:16:07.916+05:30  INFO 29608 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T11:16:07.919+05:30  INFO 29608 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T11:16:10.214+05:30  INFO 7660 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 7660 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T11:16:10.215+05:30  INFO 7660 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T11:16:10.907+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T11:16:10.908+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T11:16:11.014+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
+2025-07-27T11:16:11.026+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T11:16:11.027+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T11:16:11.038+05:30  INFO 7660 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T11:16:11.039+05:30  INFO 7660 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T11:16:11.039+05:30  INFO 7660 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T11:16:11.039+05:30  INFO 7660 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T11:16:11.039+05:30  INFO 7660 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T11:16:11.039+05:30  INFO 7660 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-27T11:16:11.443+05:30  INFO 7660 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T11:16:11.453+05:30  INFO 7660 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T11:16:11.453+05:30  INFO 7660 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T11:16:11.499+05:30  INFO 7660 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T11:16:11.499+05:30  INFO 7660 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1248 ms
+2025-07-27T11:16:11.619+05:30  INFO 7660 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T11:16:11.667+05:30  INFO 7660 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T11:16:11.694+05:30  INFO 7660 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T11:16:11.900+05:30  INFO 7660 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T11:16:11.923+05:30  INFO 7660 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T11:16:12.204+05:30  INFO 7660 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1293f8d7
+2025-07-27T11:16:12.206+05:30  INFO 7660 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T11:16:12.242+05:30  WARN 7660 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T11:16:12.253+05:30  INFO 7660 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T11:16:12.986+05:30  INFO 7660 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T11:16:13.353+05:30  INFO 7660 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T11:16:13.541+05:30  INFO 7660 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T11:16:13.737+05:30  WARN 7660 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T11:16:13.901+05:30  WARN 7660 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8628aa61-05b6-4f49-9143-e3b838d54fab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T11:16:13.905+05:30  INFO 7660 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T11:16:14.945+05:30  INFO 7660 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T11:16:14.952+05:30  INFO 7660 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 5.141 seconds (process running for 5.686)
+2025-07-27T11:16:21.901+05:30  INFO 7660 --- [skill-mentor-root] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T11:16:21.901+05:30  INFO 7660 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T11:16:21.902+05:30  INFO 7660 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-27T11:16:51.689+05:30  INFO 7660 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T11:16:51.692+05:30  INFO 7660 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T11:16:51.703+05:30  INFO 7660 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T11:16:51.705+05:30  INFO 7660 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T11:16:51.710+05:30  INFO 7660 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T16:52:13.709+05:30  INFO 16528 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 16528 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T16:52:13.712+05:30  INFO 16528 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T16:52:14.301+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T16:52:14.302+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T16:52:14.395+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 5 JPA repository interfaces.
+2025-07-27T16:52:14.404+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T16:52:14.405+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T16:52:14.414+05:30  INFO 16528 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:52:14.414+05:30  INFO 16528 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:52:14.415+05:30  INFO 16528 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:52:14.415+05:30  INFO 16528 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:52:14.415+05:30  INFO 16528 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:52:14.415+05:30  INFO 16528 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T16:52:14.774+05:30  INFO 16528 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T16:52:14.785+05:30  INFO 16528 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T16:52:14.785+05:30  INFO 16528 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T16:52:14.831+05:30  INFO 16528 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T16:52:14.831+05:30  INFO 16528 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1089 ms
+2025-07-27T16:52:14.952+05:30  INFO 16528 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T16:52:14.990+05:30  INFO 16528 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T16:52:15.016+05:30  INFO 16528 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T16:52:15.191+05:30  INFO 16528 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T16:52:15.210+05:30  INFO 16528 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T16:52:15.400+05:30  INFO 16528 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7816454d
+2025-07-27T16:52:15.402+05:30  INFO 16528 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T16:52:15.434+05:30  WARN 16528 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T16:52:15.446+05:30  INFO 16528 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T16:52:16.097+05:30  INFO 16528 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T16:52:16.161+05:30  INFO 16528 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T16:52:16.327+05:30  INFO 16528 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T16:52:16.527+05:30  WARN 16528 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T16:52:16.686+05:30  WARN 16528 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b5655826-0cd1-4b3b-aa05-962bc6924115
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T16:52:16.690+05:30  INFO 16528 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T16:52:17.892+05:30  INFO 16528 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T16:52:17.900+05:30  INFO 16528 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 4.62 seconds (process running for 5.158)
+2025-07-27T16:52:17.902+05:30  INFO 16528 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T16:52:17.904+05:30  INFO 16528 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T16:52:17.920+05:30  INFO 16528 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T16:52:17.922+05:30  INFO 16528 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T16:52:17.927+05:30  INFO 16528 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T16:53:25.289+05:30  INFO 12248 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 12248 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T16:53:25.290+05:30  INFO 12248 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T16:53:25.904+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T16:53:25.905+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T16:53:25.998+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+2025-07-27T16:53:26.009+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T16:53:26.009+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T16:53:26.020+05:30  INFO 12248 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:53:26.020+05:30  INFO 12248 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:53:26.020+05:30  INFO 12248 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:53:26.020+05:30  INFO 12248 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:53:26.020+05:30  INFO 12248 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T16:53:26.021+05:30  INFO 12248 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T16:53:26.398+05:30  INFO 12248 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T16:53:26.407+05:30  INFO 12248 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T16:53:26.407+05:30  INFO 12248 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T16:53:26.446+05:30  INFO 12248 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T16:53:26.446+05:30  INFO 12248 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1125 ms
+2025-07-27T16:53:26.553+05:30  INFO 12248 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T16:53:26.584+05:30  INFO 12248 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T16:53:26.604+05:30  INFO 12248 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T16:53:26.788+05:30  INFO 12248 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T16:53:26.806+05:30  INFO 12248 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T16:53:27.009+05:30  INFO 12248 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58e5fbe5
+2025-07-27T16:53:27.011+05:30  INFO 12248 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T16:53:27.044+05:30  WARN 12248 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T16:53:27.057+05:30  INFO 12248 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T16:53:27.726+05:30  INFO 12248 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T16:53:28.066+05:30  INFO 12248 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T16:53:28.242+05:30  INFO 12248 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T16:53:28.460+05:30  WARN 12248 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T16:53:28.611+05:30  WARN 12248 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8b5db9ba-e041-4cb6-a6fb-9f930c57a20d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T16:53:28.615+05:30  INFO 12248 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T16:53:29.430+05:30  INFO 12248 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T16:53:29.436+05:30  INFO 12248 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 4.521 seconds (process running for 4.965)
+2025-07-27T16:53:39.152+05:30  INFO 12248 --- [skill-mentor-root] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T16:53:39.152+05:30  INFO 12248 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T16:53:39.153+05:30  INFO 12248 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-27T17:01:28.470+05:30  INFO 12248 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T17:01:28.473+05:30  INFO 12248 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T17:01:28.491+05:30  INFO 12248 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T17:01:28.494+05:30  INFO 12248 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T17:01:28.499+05:30  INFO 12248 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-27T22:56:36.129+05:30  INFO 8132 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Starting SkillMentorServerApplication using Java 22.0.2 with PID 8132 (D:\skill-mentor-server\target\classes started by CHAMA COMPUTERS in D:\skill-mentor-server)
+2025-07-27T22:56:36.135+05:30  INFO 8132 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : The following 1 profile is active: "prod"
+2025-07-27T22:56:36.856+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T22:56:36.857+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T22:56:36.991+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 5 JPA repository interfaces.
+2025-07-27T22:56:37.004+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-27T22:56:37.004+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-27T22:56:37.018+05:30  INFO 8132 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.ClassRoomRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T22:56:37.018+05:30  INFO 8132 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.LiteSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T22:56:37.018+05:30  INFO 8132 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.MentorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T22:56:37.018+05:30  INFO 8132 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.SessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T22:56:37.019+05:30  INFO 8132 --- [skill-mentor-root] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.skill_mentor.server.skill_mentor_server.repository.StudentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-27T22:56:37.019+05:30  INFO 8132 --- [skill-mentor-root] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-27T22:56:37.493+05:30  INFO 8132 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-27T22:56:37.507+05:30  INFO 8132 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-27T22:56:37.508+05:30  INFO 8132 --- [skill-mentor-root] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-27T22:56:37.559+05:30  INFO 8132 --- [skill-mentor-root] [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-07-27T22:56:37.559+05:30  INFO 8132 --- [skill-mentor-root] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1390 ms
+2025-07-27T22:56:37.686+05:30  INFO 8132 --- [skill-mentor-root] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T22:56:37.737+05:30  INFO 8132 --- [skill-mentor-root] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-27T22:56:37.771+05:30  INFO 8132 --- [skill-mentor-root] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T22:56:37.980+05:30  INFO 8132 --- [skill-mentor-root] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T22:56:38.002+05:30  INFO 8132 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T22:56:38.288+05:30  INFO 8132 --- [skill-mentor-root] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f785a27
+2025-07-27T22:56:38.289+05:30  INFO 8132 --- [skill-mentor-root] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T22:56:38.327+05:30  WARN 8132 --- [skill-mentor-root] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T22:56:38.340+05:30  INFO 8132 --- [skill-mentor-root] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T22:56:39.086+05:30  INFO 8132 --- [skill-mentor-root] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T22:56:39.444+05:30  INFO 8132 --- [skill-mentor-root] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T22:56:39.630+05:30  INFO 8132 --- [skill-mentor-root] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-27T22:56:39.874+05:30  WARN 8132 --- [skill-mentor-root] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-27T22:56:40.048+05:30  WARN 8132 --- [skill-mentor-root] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3ecf47eb-d9ae-49ae-923e-23911417bfa6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-27T22:56:40.052+05:30  INFO 8132 --- [skill-mentor-root] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-27T22:56:41.004+05:30  INFO 8132 --- [skill-mentor-root] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-07-27T22:56:41.010+05:30  INFO 8132 --- [skill-mentor-root] [main] c.s.s.s.SkillMentorServerApplication     : Started SkillMentorServerApplication in 5.38 seconds (process running for 6.01)
+2025-07-27T22:57:04.434+05:30  INFO 8132 --- [skill-mentor-root] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-27T22:57:04.435+05:30  INFO 8132 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-27T22:57:04.437+05:30  INFO 8132 --- [skill-mentor-root] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-27T23:33:52.655+05:30  INFO 8132 --- [skill-mentor-root] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-27T23:33:52.659+05:30  INFO 8132 --- [skill-mentor-root] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-27T23:33:52.671+05:30  INFO 8132 --- [skill-mentor-root] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T23:33:52.673+05:30  INFO 8132 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-27T23:33:52.675+05:30  INFO 8132 --- [skill-mentor-root] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
