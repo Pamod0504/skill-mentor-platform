@@ -1,4 +1,4 @@
-package com.skillmentor.root.exception;
+package com.example.skill_mentor_platform.exception;
 
 public class ClassRoomException extends RuntimeException{
     public ClassRoomException(String message, Throwable throwable){

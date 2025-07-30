@@ -1,4 +1,4 @@
-package com.skillmentor.root.security;
+package com.example.skill_mentor_platform.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

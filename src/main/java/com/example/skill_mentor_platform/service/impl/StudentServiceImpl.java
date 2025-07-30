@@ -1,11 +1,12 @@
-package com.skillmentor.root.service.impl;
+package com.example.skill_mentor_platform.service.impl;
 
-import com.skillmentor.root.dto.StudentDTO;
-import com.skillmentor.root.entity.StudentEntity;
-import com.skillmentor.root.exception.StudentException;
-import com.skillmentor.root.mapper.StudentEntityDTOMapper;
-import com.skillmentor.root.repository.StudentRepository;
-import com.skillmentor.root.service.StudentService;
+
+import com.example.skill_mentor_platform.dto.StudentDTO;
+import com.example.skill_mentor_platform.entity.StudentEntity;
+import com.example.skill_mentor_platform.exception.StudentException;
+import com.example.skill_mentor_platform.mapper.StudentEntityDTOMapper;
+import com.example.skill_mentor_platform.repository.StudentRepository;
+import com.example.skill_mentor_platform.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

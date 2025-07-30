@@ -1,4 +1,4 @@
-package com.skillmentor.root.exception;
+package com.example.skill_mentor_platform.exception;
 
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;

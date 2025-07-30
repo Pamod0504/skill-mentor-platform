@@ -1,4 +1,4 @@
-package com.skillmentor.root.security;
+package com.example.skill_mentor_platform.security;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,6 +52,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/academic/classroom/**").permitAll()
+                        // Add explicit admin permission for classroom creation
+                        .requestMatchers(HttpMethod.POST, "/api/v1/academic/classroom").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(new JwtAuthenticationFilter(clerkPublicKey()), UsernamePasswordAuthenticationFilter.class);

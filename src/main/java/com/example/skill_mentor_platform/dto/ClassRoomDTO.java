@@ -1,5 +1,4 @@
-package com.skillmentor.root.dto;
-
+package com.example.skill_mentor_platform.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;

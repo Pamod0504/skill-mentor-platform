@@ -1,15 +1,19 @@
-package com.skillmentor.root.service.impl;
+package com.example.skill_mentor_platform.service.impl;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.*;
-import com.skillmentor.root.entity.LiteSessionEntity;
-import com.skillmentor.root.entity.SessionEntity;
-import com.skillmentor.root.mapper.AuditDTOEntityMapper;
-import com.skillmentor.root.mapper.LiteSessionEntityDTOMapper;
-import com.skillmentor.root.mapper.SessionDTOEntityMapper;
-import com.skillmentor.root.repository.LiteSessionRepository;
-import com.skillmentor.root.repository.SessionRepository;
-import com.skillmentor.root.service.SessionService;
+
+import com.example.skill_mentor_platform.common.Constants;
+import com.example.skill_mentor_platform.dto.AuditDTO;
+import com.example.skill_mentor_platform.dto.PaymentDTO;
+import com.example.skill_mentor_platform.dto.SessionDTO;
+import com.example.skill_mentor_platform.dto.SessionLiteDTO;
+import com.example.skill_mentor_platform.entity.LiteSessionEntity;
+import com.example.skill_mentor_platform.entity.SessionEntity;
+import com.example.skill_mentor_platform.mapper.AuditDTOEntityMapper;
+import com.example.skill_mentor_platform.mapper.LiteSessionEntityDTOMapper;
+import com.example.skill_mentor_platform.mapper.SessionDTOEntityMapper;
+import com.example.skill_mentor_platform.repository.LiteSessionRepository;
+import com.example.skill_mentor_platform.repository.SessionRepository;
+import com.example.skill_mentor_platform.service.SessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

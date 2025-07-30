@@ -1,7 +1,7 @@
-package com.skillmentor.root.dto;
+package com.example.skill_mentor_platform.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.skillmentor.root.common.Constants;
+import com.example.skill_mentor_platform.common.Constants;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

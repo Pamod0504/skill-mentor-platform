@@ -1,6 +1,7 @@
-package com.skillmentor.root.entity;
+package com.example.skill_mentor_platform.entity;
 
-import com.skillmentor.root.common.Constants;
+
+import com.example.skill_mentor_platform.common.Constants;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

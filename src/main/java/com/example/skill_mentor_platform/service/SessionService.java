@@ -1,7 +1,11 @@
-package com.skillmentor.root.service;
+package com.example.skill_mentor_platform.service;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.*;
+
+import com.example.skill_mentor_platform.common.Constants;
+import com.example.skill_mentor_platform.dto.AuditDTO;
+import com.example.skill_mentor_platform.dto.PaymentDTO;
+import com.example.skill_mentor_platform.dto.SessionDTO;
+import com.example.skill_mentor_platform.dto.SessionLiteDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

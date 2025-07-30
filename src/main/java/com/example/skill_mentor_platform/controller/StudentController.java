@@ -1,9 +1,10 @@
-package com.skillmentor.root.controller;
+package com.example.skill_mentor_platform.controller;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.StudentDTO;
-import com.skillmentor.root.exception.StudentException;
-import com.skillmentor.root.service.StudentService;
+import com.example.skill_mentor_platform.common.Constants;
+
+import com.example.skill_mentor_platform.dto.StudentDTO;
+import com.example.skill_mentor_platform.exception.StudentException;
+import com.example.skill_mentor_platform.service.StudentService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -28,7 +29,7 @@ import java.util.List;
 @RequestMapping(value = "/academic")
 @Tag(name = "Student Management", description = "APIs for managing students")
 public class StudentController {
-    private StudentService studentService;
+    final StudentService studentService;
 
     @Autowired
     public StudentController(StudentService studentService) {

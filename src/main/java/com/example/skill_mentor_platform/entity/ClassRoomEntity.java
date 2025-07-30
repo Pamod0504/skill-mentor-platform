@@ -1,4 +1,4 @@
-package com.skillmentor.root.entity;
+package com.example.skill_mentor_platform.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;

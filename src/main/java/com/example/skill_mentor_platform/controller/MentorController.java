@@ -1,9 +1,10 @@
-package com.skillmentor.root.controller;
+package com.example.skill_mentor_platform.controller;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.MentorDTO;
-import com.skillmentor.root.exception.MentorException;
-import com.skillmentor.root.service.MentorService;
+import com.example.skill_mentor_platform.common.Constants;
+
+import com.example.skill_mentor_platform.dto.MentorDTO;
+import com.example.skill_mentor_platform.exception.MentorException;
+import com.example.skill_mentor_platform.service.MentorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

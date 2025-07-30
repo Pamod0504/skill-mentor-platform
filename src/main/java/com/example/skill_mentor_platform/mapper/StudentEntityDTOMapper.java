@@ -1,7 +1,8 @@
-package com.skillmentor.root.mapper;
+package com.example.skill_mentor_platform.mapper;
 
-import com.skillmentor.root.dto.StudentDTO;
-import com.skillmentor.root.entity.StudentEntity;
+
+import com.example.skill_mentor_platform.dto.StudentDTO;
+import com.example.skill_mentor_platform.entity.StudentEntity;
 
 public class StudentEntityDTOMapper {
     public static StudentDTO map(StudentEntity studentEntity) {

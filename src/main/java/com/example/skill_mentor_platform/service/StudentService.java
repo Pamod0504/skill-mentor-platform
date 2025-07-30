@@ -1,7 +1,8 @@
-package com.skillmentor.root.service;
+package com.example.skill_mentor_platform.service;
 
-import com.skillmentor.root.dto.StudentDTO;
-import com.skillmentor.root.exception.StudentException;
+
+import com.example.skill_mentor_platform.dto.StudentDTO;
+import com.example.skill_mentor_platform.exception.StudentException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

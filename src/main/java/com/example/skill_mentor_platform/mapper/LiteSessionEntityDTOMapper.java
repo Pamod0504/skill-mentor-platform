@@ -1,7 +1,8 @@
-package com.skillmentor.root.mapper;
+package com.example.skill_mentor_platform.mapper;
 
-import com.skillmentor.root.dto.SessionLiteDTO;
-import com.skillmentor.root.entity.LiteSessionEntity;
+
+import com.example.skill_mentor_platform.dto.SessionLiteDTO;
+import com.example.skill_mentor_platform.entity.LiteSessionEntity;
 
 public class LiteSessionEntityDTOMapper {
 

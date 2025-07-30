@@ -1,5 +1,6 @@
-package com.skillmentor.root.service;
-import com.skillmentor.root.dto.ClassRoomDTO;
+package com.example.skill_mentor_platform.service;
+
+import com.example.skill_mentor_platform.dto.ClassRoomDTO;
 
 import java.util.List;
 

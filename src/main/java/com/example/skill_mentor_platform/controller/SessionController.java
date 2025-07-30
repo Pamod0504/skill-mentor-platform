@@ -1,11 +1,10 @@
-package com.skillmentor.root.controller;
+package com.example.skill_mentor_platform.controller;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.SessionDTO;
-import com.skillmentor.root.dto.SessionLiteDTO;
-import com.skillmentor.root.dto.StudentDTO;
-import com.skillmentor.root.exception.SessionException;
-import com.skillmentor.root.service.SessionService;
+import com.example.skill_mentor_platform.common.Constants;
+
+import com.example.skill_mentor_platform.dto.SessionDTO;
+import com.example.skill_mentor_platform.dto.SessionLiteDTO;
+import com.example.skill_mentor_platform.service.SessionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

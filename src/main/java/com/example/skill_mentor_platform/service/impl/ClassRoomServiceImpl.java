@@ -1,13 +1,14 @@
-package com.skillmentor.root.service.impl;
+package com.example.skill_mentor_platform.service.impl;
 
-import com.skillmentor.root.dto.ClassRoomDTO;
-import com.skillmentor.root.dto.MentorDTO;
-import com.skillmentor.root.entity.ClassRoomEntity;
-import com.skillmentor.root.exception.ClassRoomException;
-import com.skillmentor.root.mapper.ClassRoomEntityDTOMapper;
-import com.skillmentor.root.mapper.MentorEntityDTOMapper;
-import com.skillmentor.root.repository.ClassRoomRepository;
-import com.skillmentor.root.service.ClassRoomService;
+
+import com.example.skill_mentor_platform.dto.ClassRoomDTO;
+import com.example.skill_mentor_platform.dto.MentorDTO;
+import com.example.skill_mentor_platform.entity.ClassRoomEntity;
+import com.example.skill_mentor_platform.exception.ClassRoomException;
+import com.example.skill_mentor_platform.mapper.ClassRoomEntityDTOMapper;
+import com.example.skill_mentor_platform.mapper.MentorEntityDTOMapper;
+import com.example.skill_mentor_platform.repository.ClassRoomRepository;
+import com.example.skill_mentor_platform.service.ClassRoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

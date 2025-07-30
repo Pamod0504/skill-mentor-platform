@@ -1,8 +1,9 @@
-package com.skillmentor.root.controller;
+package com.example.skill_mentor_platform.controller;
 
-import com.skillmentor.root.common.Constants;
-import com.skillmentor.root.dto.ClassRoomDTO;
-import com.skillmentor.root.service.ClassRoomService;
+import com.example.skill_mentor_platform.common.Constants;
+
+import com.example.skill_mentor_platform.dto.ClassRoomDTO;
+import com.example.skill_mentor_platform.service.ClassRoomService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

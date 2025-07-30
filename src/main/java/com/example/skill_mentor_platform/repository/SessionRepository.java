@@ -1,6 +1,6 @@
-package com.skillmentor.root.repository;
+package com.example.skill_mentor_platform.repository;
 
-import com.skillmentor.root.entity.SessionEntity;
+import com.example.skill_mentor_platform.entity.SessionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,7 +1,7 @@
-package com.skillmentor.root.mapper;
+package com.example.skill_mentor_platform.mapper;
 
-import com.skillmentor.root.dto.AuditDTO;
-import com.skillmentor.root.entity.SessionEntity;
+import com.example.skill_mentor_platform.dto.AuditDTO;
+import com.example.skill_mentor_platform.entity.SessionEntity;
 
 public class AuditDTOEntityMapper {
     public static AuditDTO map(SessionEntity sessionEntity) {

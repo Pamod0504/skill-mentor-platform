@@ -1,6 +1,6 @@
-package com.skillmentor.root.repository;
+package com.example.skill_mentor_platform.repository;
 
-import com.skillmentor.root.entity.StudentEntity;
+import com.example.skill_mentor_platform.entity.StudentEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,8 @@
-package com.skillmentor.root.mapper;
+package com.example.skill_mentor_platform.mapper;
 
-import com.skillmentor.root.dto.MentorDTO;
-import com.skillmentor.root.entity.MentorEntity;
+
+import com.example.skill_mentor_platform.dto.MentorDTO;
+import com.example.skill_mentor_platform.entity.MentorEntity;
 
 public class MentorEntityDTOMapper {
     public static MentorDTO map(MentorEntity mentorEntity) {

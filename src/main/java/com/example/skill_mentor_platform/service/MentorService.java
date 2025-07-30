@@ -1,7 +1,7 @@
-package com.skillmentor.root.service;
+package com.example.skill_mentor_platform.service;
 
-import com.skillmentor.root.dto.MentorDTO;
-import com.skillmentor.root.exception.MentorException;
+import com.example.skill_mentor_platform.dto.MentorDTO;
+import com.example.skill_mentor_platform.exception.MentorException;
 
 import java.util.List;
 
