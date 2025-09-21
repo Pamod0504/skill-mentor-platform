@@ -58,8 +58,9 @@ public class MentorEntity {
     @Column(name = "qualification", nullable = false)
     private String qualification;
     @NotNull(message = "Mentor image must not be null")
+    @Lob
     @Column(name = "mentor_image", nullable = false)
-    private String mentorImage;
+    private String imageUrl; // Changed from byte[] to String for URL
     @OneToMany(mappedBy = "mentorEntity", fetch = FetchType.EAGER)
     private List<SessionEntity> sessionEntityList = new ArrayList<>();
 }

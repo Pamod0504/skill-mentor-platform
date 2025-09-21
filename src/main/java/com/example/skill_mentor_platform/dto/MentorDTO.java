@@ -54,7 +54,7 @@ public class MentorDTO {
     private String qualification;
     @NotNull(message = "mentor_image must not be null")
     @JsonProperty("mentor_image")
-    private String mentorImage;
+    private String imageUrl; // Changed from byte[] to String for URL
     @NotNull(message = "Classroom ID must not be null")
     @JsonProperty("class_room_id")
     private Integer classRoomId;

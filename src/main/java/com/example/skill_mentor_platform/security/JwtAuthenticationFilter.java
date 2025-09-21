@@ -25,12 +25,23 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
+
+        String path = request.getRequestURI();
+
+        // Skip JWT validation for public uploads
+        if (path.startsWith("/api/v1/uploads/")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         String header = request.getHeader("Authorization");
         if (header == null || !header.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
             return;
         }
+
         String token = header.substring(7); // Remove "Bearer "
         try {
             Claims claims = Jwts.parserBuilder()
@@ -38,7 +49,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     .build()
                     .parseClaimsJws(token)
                     .getBody();
+
             String userId = claims.getSubject();
+
             List<String> roles;
             Object rawRoles = claims.get("role");
             if (rawRoles instanceof List<?> rawList) {
@@ -48,19 +61,23 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             } else {
                 roles = List.of();
             }
+
             var authorities = roles.stream()
                     .map(role -> new SimpleGrantedAuthority("ROLE_" + role.toUpperCase()))
                     .collect(Collectors.toList());
+
             var auth = new UsernamePasswordAuthenticationToken(
                     new org.springframework.security.core.userdetails.User(userId, "", authorities),
                     null,
                     authorities
             );
+
             SecurityContextHolder.getContext().setAuthentication(auth);
         } catch (Exception e) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             return;
         }
+
         filterChain.doFilter(request, response);
     }
 }

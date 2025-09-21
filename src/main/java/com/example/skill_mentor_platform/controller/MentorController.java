@@ -4,6 +4,7 @@ import com.example.skill_mentor_platform.common.Constants;
 
 import com.example.skill_mentor_platform.dto.MentorDTO;
 import com.example.skill_mentor_platform.exception.MentorException;
+import com.example.skill_mentor_platform.service.FileUploadService;
 import com.example.skill_mentor_platform.service.MentorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -11,25 +12,33 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
 import java.util.List;
 
 @Validated
 @RestController
 @RequestMapping(value = "/academic")
+@CrossOrigin(origins = "http://localhost:3000")
 @Tag(name = "Mentor Management", description = "Endpoints for managing mentors and their related data")
 public class MentorController {
 
     @Autowired
     private MentorService mentorService;
+
+    @Autowired
+    private FileUploadService fileUploadService;
 
     public MentorController() {
     }
@@ -54,6 +63,8 @@ public class MentorController {
             return ResponseEntity.badRequest().body(mentorException.getMessage());
         }
     }
+
+
 
     @Operation(summary = "Get all mentors", description = "Retrieves all mentors with optional filtering by name or subject")
     @ApiResponses(value = {

@@ -22,6 +22,7 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping(value = "/academic")
+@CrossOrigin(origins = "http://localhost:3000")
 @Tag(name = "Classroom Management", description = "Endpoints for managing classrooms and their relationships")
 public class ClassroomController {
 

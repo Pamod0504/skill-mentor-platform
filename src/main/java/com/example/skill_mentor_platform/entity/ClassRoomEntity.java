@@ -30,10 +30,10 @@ public class ClassRoomEntity {
     @Column(name = "enrolled_student_count", nullable = false)
     @Schema(description = "Number of students enrolled", example = "30")
     private Integer enrolledStudentCount;
-    @NotNull(message = "Class image must not be null")
+    @NotNull(message = "Class image URL must not be null")
     @Column(name = "class_image", nullable = false)
-    @Schema(description = "Image URL for the classroom", example = "http://example.com/classroom.jpg")
-    private String classImage;
+    @Schema(description = "URL of the classroom image", example = "http://localhost:8080/files/image.jpg")
+    private String imageUrl; // Changed from byte[] to String for URL
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "mentor_id", referencedColumnName = "mentor_id")
     @Schema(description = "Mentor assigned to this classroom")

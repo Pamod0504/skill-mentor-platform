@@ -52,8 +52,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/academic/classroom/**").permitAll()
-                        // Add explicit admin permission for classroom creation
-                        .requestMatchers(HttpMethod.POST, "/api/v1/academic/classroom").hasRole("ADMIN")
+                        // Explicit admin permissions for creation endpoints (context-path excluded)
+                        .requestMatchers(HttpMethod.POST, "/academic/classroom").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/academic/mentor").hasRole("ADMIN")
+                        .requestMatchers("/uploads/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(new JwtAuthenticationFilter(clerkPublicKey()), UsernamePasswordAuthenticationFilter.class);
@@ -76,5 +78,3 @@ public class SecurityConfig {
         return factory.generatePublic(publicSpec);
     }
 }
-
-

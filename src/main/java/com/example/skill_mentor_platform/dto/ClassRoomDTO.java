@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.URL;
 
 @Data
 @NoArgsConstructor
@@ -20,9 +21,10 @@ public class ClassRoomDTO {
     @NotNull(message = "Enrolled student count must not be null")
     @JsonProperty("enrolled_student_count")
     private Integer enrolledStudentCount;
-    @NotNull(message = "class_image must not be null")
-    @JsonProperty("class_image")
-    private String classImage;
+    @NotBlank(message = "class_image must not be blank")
+    @URL(message = "Must be a valid URL")
+    @JsonProperty("image_url")
+    private String imageUrl;
     @JsonProperty("mentor")
     private MentorDTO mentorDTO;
 }
